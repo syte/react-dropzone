@@ -53,6 +53,7 @@ export type DropzoneProps = Omit<React.HTMLProps<HTMLDivElement>, "onDrop"> & {
   onDropRejected?: DropFileEventHandler;
   onFileDialogCancel?: () => void;
   children: React.ReactNode | DropzoneRenderFunction;
+  style: CSSProperties;
 };
 
 export default class Dropzone extends Component<DropzoneProps> {
